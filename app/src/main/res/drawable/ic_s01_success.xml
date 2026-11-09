@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- S01 준비된 보호 설정 · 줄 앞 체크 (피그마 v2 Icon/Success 1200:86 — 28 · 파란 원 + 흰 체크 2.2) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="28dp"
+    android:height="28dp"
+    android:viewportWidth="28"
+    android:viewportHeight="28">
+    <path
+        android:pathData="M14,0A14,14 0 1 1 14,28A14,14 0 1 1 14,0Z"
+        android:fillColor="@color/mint" />
+    <path
+        android:pathData="M6.9,14.16L11.73,19.1L21.06,8.8"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

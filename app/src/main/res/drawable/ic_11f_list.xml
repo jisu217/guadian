@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 11F 가족별 설정 · 「항상 허용 앱·사이트」 (피그마 v2 1401:42 — 22 · 획 2 #1F63E0) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="22dp"
+    android:height="22dp"
+    android:viewportWidth="22"
+    android:viewportHeight="22">
+    <path
+        android:pathData="M4,6.5H18M4,11H14M4,15.5H10"
+        android:strokeColor="@color/mint"
+        android:strokeWidth="2"
+        android:strokeLineCap="round" />
+</vector>

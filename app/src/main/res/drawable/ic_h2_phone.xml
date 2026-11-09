@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- H2-R 보호자 홈 · 「전화하기」 (피그마 v2 Icon/phone 1435:198 — 20 · 획 2 흰색) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    <path
+        android:pathData="M8.49,4.1H6.51C5.17,4.1 4.1,5.16 4.1,6.51C4.6,11.89 8.07,15.36 13.45,15.86C14.8,15.86 15.86,14.79 15.86,13.45V11.47L12.67,10.47L11.61,12.03C9.98,11.32 8.64,9.98 7.93,8.35L9.49,7.29L8.49,4.1Z"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

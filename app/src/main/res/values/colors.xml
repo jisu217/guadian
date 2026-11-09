@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  화면 색. **Look.kt와 동일 값 필수** — 오버레이(테두리·쉴드)는 코드, 일반 화면은 XML로
+  그리므로 어긋나면 같은 앱 안에서 색 불일치. 한쪽 수정 시 다른 쪽도 함께 수정.
+
+  값: 피그마 「GuADian · FULL SERVICE FLOW v2」 DS/Board v2 그대로.
+  `mint` 이름: 옛 시안(민트) 때 지은 이름을 34개 화면이 그대로 사용 —
+  뜻은 "브랜드 기본색(버튼·강조)", 현재 값은 파랑 #1F63E0
+-->
+<resources>
+    <!-- 브랜드 기본색 — Primary 버튼 · 진행 바 · 토글 ON -->
+    <color name="mint">#1F63E0</color>
+    <color name="mint_dark">#174FB8</color>     <!-- 눌린 상태 -->
+    <color name="mint_tint">#E8F0FF</color>     <!-- 파랑 연한 바탕 (배지·선택 카드) -->
+
+    <!-- 상태색 (의미 고정) -->
+    <color name="brand_blue">#2E7DFF</color>    <!-- 파랑 · 정보 · 광고 탐지 · 확인 · 완료 -->
+    <color name="brand_green">#17876B</color>
+    <color name="wordmark_ink">#0A1A33</color>  <!-- 워드마크 Gu·ian (피그마 00 · 1055:10) -->   <!-- 로고 꺾쇠 · 워드마크 'AD' -->
+    <color name="shield_blue">#1D4FD8</color>   <!-- 로고 방패 -->
+
+    <!-- 바탕과 글자 -->
+    <color name="bg">#FFFFFF</color>
+    <color name="card">#F5F7FA</color>          <!-- 카드 바탕 · radius 16 -->
+    <color name="line">#E6E9EE</color>          <!-- 카드 안 구분선 1px -->
+    <color name="line_soft">#EEF1F5</color>     <!-- 진행 바 트랙 · 보조 버튼 바탕 -->
+    <color name="field">#F5F7FA</color>         <!-- 입력칸 바탕 -->
+    <color name="ink">#0D1220</color>           <!-- 제목 · 본문 -->
+    <color name="ink_body">#39414F</color>      <!-- 보조 버튼 글자 -->
+    <color name="ink_soft">#525C6E</color>      <!-- 부제 · 섹션 라벨 · 설명 -->
+    <color name="ink_muted">#8E97A6</color>     <!-- 단계 표시 '2 / 3' · 시각 -->
+    <color name="ink_faint">#8E97A6</color>
+    <color name="on_mint">#FFFFFF</color>       <!-- 파랑 버튼 위 글자 -->
+    <color name="brand_ink">#1F63E0</color>     <!-- 연한 파랑 바탕 위의 글자 -->
+    <color name="mint_shadow">#1F63E0</color>
+
+    <!-- 보조 버튼 (Secondary · 동일 규격 · 16 Medium) -->
+    <color name="btn_secondary">#EEF1F5</color>
+    <color name="btn_secondary_ink">#39414F</color>
+
+    <!-- 위험도 — 파랑(일반/확인 전) · 초록(확인된 안전) · 주황(주의) · 빨강(차단) -->
+    <color name="risk_unknown">#2E7DFF</color>
+    <color name="risk_unknown_tint">#E8F0FF</color>
+    <color name="risk_safe">#17876B</color>
+    <color name="risk_safe_tint">#E6F4EF</color>
+    <color name="risk_warn">#FF8A1F</color>
+    <color name="risk_warn_tint">#FFF1E0</color>
+    <color name="risk_warn_ink">#A35A00</color>  <!-- 주황 연한 바탕 위의 글자 -->
+    <color name="risk_danger">#E01F26</color>
+    <color name="risk_danger_tint">#FFEAEA</color>
+
+    <!-- 런처 아이콘 바탕. 로고와 같은 흰색 -->
+    <color name="ic_launcher_background">#FFFFFF</color>
+</resources>

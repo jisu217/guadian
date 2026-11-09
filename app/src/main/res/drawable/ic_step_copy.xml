@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 피그마 Icon/copy 18 · #39414F (P05 '코드 복사' 버튼 안) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="18dp"
+    android:height="18dp"
+    android:viewportWidth="18"
+    android:viewportHeight="18">
+    <path
+        android:pathData="M11.75,6.35V3.8H3.8V11.75H6.35M6.35,6.35H14.3V14.3H6.35V6.35Z"
+        android:strokeColor="@color/btn_secondary_ink"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

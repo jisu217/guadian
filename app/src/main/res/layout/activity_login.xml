@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  S00 · 가족 연결 코드 입력 (피그마 v2 · 1376:2).
+  어르신 규격 — 앱바(뒤로 44 x=7 · 제목 20 Bold) → 진행 바 + "어르신 1 / 4" →
+  제목 26 Bold/34 → 부제 16/23 → 코드 칸 여섯(50×64 r14) → 버튼 66 r14 19 Bold.
+  칸은 LoginActivity가 그린다 — 칸 수·상태(채움/지금 칸/빈 칸)가 입력에 따라 바뀌어서.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:orientation="vertical"
+    android:paddingTop="9dp"
+    android:paddingBottom="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="7dp"
+        android:paddingEnd="24dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:contentDescription="뒤로"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            style="@style/AppBarTitle"
+            android:layout_marginStart="1dp"
+            android:text="가족 연결 코드" />
+    </LinearLayout>
+
+    <!-- 진행 바 + "어르신 1 / 4". Step.progress()에서 채움 -->
+    <LinearLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp">
+
+        <LinearLayout
+            android:id="@+id/progress_track"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/progress_fill"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <View
+                android:id="@+id/progress_rest"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.015"
+            android:textColor="@color/ink_muted"
+            android:textSize="12.5sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="24dp">
+
+            <TextView
+                style="@style/TitleSenior"
+                android:layout_width="match_parent"
+                android:text="가족이 보낸\n연결 코드를 입력해 주세요" />
+
+            <TextView
+                android:id="@+id/text_sub"
+                style="@style/TitleSub"
+                android:layout_marginTop="10dp"
+                android:lineHeight="23sp"
+                android:text="문자로 받은 숫자 6자리를 넣어주세요"
+                android:textSize="16sp" />
+
+            <!-- 코드 · 비밀번호 칸: LoginActivity가 채운다 -->
+            <LinearLayout
+                android:id="@+id/box_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/label_pin"
+                style="@style/SectionLabel"
+                android:layout_marginTop="28dp"
+                android:text="비밀번호 · 숫자 4자리" />
+
+            <LinearLayout
+                android:id="@+id/box_pin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/text_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.015"
+                android:lineHeight="20sp"
+                android:textColor="@color/ink_muted"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_join"
+        style="@style/SeniorButton"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="연결하기" />
+</LinearLayout>

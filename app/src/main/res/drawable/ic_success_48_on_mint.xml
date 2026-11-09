@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 피그마 Icon/Success 48 · 파란 바탕 위 — 흰 원 + 파란 체크, 획 3 (10G 보호 결과 머리) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:pathData="M24,0 a24,24 0 1,0 0.001,0 z"
+        android:fillColor="@color/bg" />
+    <path
+        android:pathData="M12,24.4L20.2,32.8L36.2,15.2"
+        android:strokeColor="@color/mint"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

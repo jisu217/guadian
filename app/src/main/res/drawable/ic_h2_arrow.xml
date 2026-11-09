@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- E02 홈 카드 안 「가족 연결코드 받기」 끝 화살 (피그마 v2 1502:4 — 획 2 #1F63E0) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="8dp"
+    android:height="14dp"
+    android:viewportWidth="8"
+    android:viewportHeight="14">
+    <path
+        android:pathData="M1.27,0.64L6.27,6.64L1.27,12.64"
+        android:strokeColor="@color/mint"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

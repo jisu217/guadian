@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 피그마 S04 상단 큰 체크 64 · 흰 원 + 파란 체크, 획 3 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+    <path
+        android:pathData="M32,0 a32,32 0 1,0 0.001,0 z"
+        android:fillColor="@color/on_mint" />
+    <path
+        android:pathData="M15.8,32.46L26.84,43.75L48.18,20.2"
+        android:strokeColor="@color/mint"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

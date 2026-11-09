@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 보호자 폰 위험 알림용. 안드로이드 13부터 사용자 허락 필요 -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- 위험도 판정 서버(HttpJudge) 호출 전용. 광고 랜딩페이지 열기는 앱이 아닌 서버 담당 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+        광고가 연 다른 앱의 **이름** 표시용. 안드로이드 11부터 다른 앱 정보는 여기 선언해야 조회 가능 —
+        미선언 시 getApplicationLabel 실패, 화면에 "com.coupang.mobile" 그대로 노출.
+
+        QUERY_ALL_PACKAGES 권한 미사용 — 설치 앱 전부를 보는 민감 권한, 플레이 심사에서 사유 요구.
+        런처에 뜨는 앱만 조회하면 충분하므로 이 범위로 한정
+    -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+    </queries>
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme">
+
+        <!--
+            앱 첫 화면: 로고 한 장(시안 680:2). 1.4초 뒤 소개 화면으로 전환
+        -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+            로고 다음 소개 화면. 이미 가족에 연결된 폰은 소개가 홈으로 자동 전환 —
+            처음 쓰는 사람과 계속 쓰는 사람의 첫 화면이 다름.
+
+            런처에서는 빠졌지만 exported 유지 — 개발용 통로
+            (`am start -n .../.IntroActivity` + screen 인자)의 직접 호출 대상
+        -->
+        <activity
+            android:name=".IntroActivity"
+            android:exported="true" />
+
+        <activity android:name=".MeActivity" android:exported="false" />
+        <activity android:name=".AccountActivity" android:exported="false" />
+        <activity android:name=".NameActivity" android:exported="false" />
+        <activity android:name=".RoleActivity" android:exported="false" />
+        <!-- Phase 1 · 보호자 다섯 걸음 -->
+        <activity android:name=".SetupActivity" android:exported="false" />
+        <activity android:name=".PolicyActivity" android:exported="false" />
+        <activity android:name=".NotifyActivity" android:exported="false" />
+        <activity android:name=".ShareActivity" android:exported="false" />
+        <activity android:name=".InviteActivity" android:exported="false" />
+        <activity android:name=".QrActivity" android:exported="false" />
+        <activity android:name=".SignedUpActivity" android:exported="false" />
+        <activity android:name=".LinkedActivity" android:exported="false" />
+        <!-- Phase 1 · 어르신 네 걸음 -->
+        <activity android:name=".SeniorSetupActivity" android:exported="false" />
+        <activity android:name=".ConsentActivity" android:exported="false" />
+        <activity android:name=".PermissionActivity" android:exported="false" />
+        <activity android:name=".DoneActivity" android:exported="false" />
+        <!-- 홈 — 역할에 따라 둘 중 하나 열림 -->
+        <activity android:name=".SeniorHomeActivity" android:exported="false" />
+        <activity android:name=".SeniorSummaryActivity" android:exported="false" />
+        <activity android:name=".GuardianHomeActivity" android:exported="false" />
+
+        <!-- 가족 계정: 로그인 → 프로필 고르기 → (보호자면) 보호 현황 -->
+        <activity android:name=".LoginActivity" android:exported="false" />
+        <activity android:name=".ProfileActivity" android:exported="false" />
+        <activity android:name=".EventListActivity" android:exported="false" />
+        <activity android:name=".ReportActivity" android:exported="false" />
+        <activity android:name=".ReportListActivity" android:exported="false" />
+        <activity android:name=".ReportDetailActivity" android:exported="false" />
+        <!-- 어르신이 보는 주간 요약 -->
+        <!-- 위험 기록 한 건의 과정, 그리고 거기서 바로 보내는 한마디 -->
+        <activity android:name=".EventDetailActivity" android:exported="false" />
+        <!-- 위험 기록 한 건의 결과 (10G) -->
+        <activity android:name=".ProtectResultActivity" android:exported="false" />
+        <!-- 보호자 → 어르신 도움 보내기 (09G) · 알림·허용 목록 (13G) -->
+        <activity android:name=".HelpSendActivity" android:exported="false" />
+        <activity android:name=".AlertSettingsActivity" android:exported="false" />
+        <activity android:name=".AllowListActivity" android:exported="false" />
+        <activity android:name=".FamilySettingsActivity" android:exported="false" />
+        <!-- 주고받은 한마디. 알림 탭 시 도착 화면 -->
+        <!-- 어르신 → 보호자 도움 요청 -->
+
+        <!-- 보호자 폰의 알림 수신 -->
+        <service
+            android:name=".PushService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".AdDetectService"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/ad_detect_service" />
+        </service>
+    </application>
+</manifest>

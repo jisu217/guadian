@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 탭바 '홈' (피그마 H1/H2 Nav/Icon · 24 · 선 2 · 둥근 끝). 색은 쓰는 쪽에서 tint로 — 선택 #1F63E0 · 비선택 #8E97A6 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:pathData="M3.4,11.3 L12,3.7 L20.6,11.3 M5.6,9.7 V20.3 H18.4 V9.7 M9.6,20.3 V14.3 H14.4 V20.3"
+        android:strokeColor="#000000"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

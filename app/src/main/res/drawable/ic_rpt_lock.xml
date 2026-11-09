@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- '이 리포트에 담기는 정보' 카드의 자물쇠 (피그마 Icon/lock · 20×20 · 획 2 #8E97A6). 11G-3에서 export -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    <path
+        android:pathData="M7.02,8.7V6.29C7.02,4.63 8.35,3.3 10.01,3.3C11.67,3.3 13,4.63 13,6.29V8.7M4.7,8.7H15.32V16.67H4.7V8.7Z"
+        android:strokeColor="#8E97A6"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

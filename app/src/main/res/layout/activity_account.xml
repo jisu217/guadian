@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  01 · 안심폰 시작하기 / 계정 만들기 (피그마 v2 · 1035:46).
+  피그마 값: 앱바 뒤로 44 x=7 · 제목 20 Bold x=52 · 큰 제목 24 Bold/32 ·
+  라벨 「휴대폰 번호」 14 Bold #525C6E · 입력칸 60 · **#F5F7FA 채움 r14 · 안쪽 20 · 글자 18 Bold** ·
+  동의 줄(체크 22 + 14.5 Regular #525C6E) · CTA 56.
+  세로 간격(28·34·10·28)만 반영, CTA는 바닥 고정(Insets가 34 하한 보장).
+  시안에 없으나 앱에 남긴 것: CTA 아래 "시연용" 안내 — 인증 문자를 실제로 보내지 않으므로
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="20dp">
+
+    <!-- 앱바: 뒤로 화살표 44(x=7) + 제목 20 Bold (x=52) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="7dp"
+        android:paddingEnd="24dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:contentDescription="뒤로"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            style="@style/AppBarTitle"
+            android:layout_marginStart="1dp"
+            android:text="계정 만들기" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp">
+
+            <TextView
+                style="@style/TitleBig"
+                android:layout_width="match_parent"
+                android:layout_marginTop="28dp"
+                android:text="휴대폰 보호를 위한\n계정을 만들어요" />
+
+            <TextView
+                style="@style/SectionLabel"
+                android:layout_marginTop="34dp"
+                android:text="휴대폰 번호" />
+
+            <!-- 입력칸 (시안 1358:5 Field/Phone): #F5F7FA 채움 · r14 · 안쪽 20 · 테두리 없음 -->
+            <LinearLayout
+                android:id="@+id/box_phone"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <EditText
+                    android:id="@+id/input_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:fontFamily="@font/noto"
+                    android:gravity="center_vertical"
+                    android:hint="010 0000 0000"
+                    android:importantForAutofill="no"
+                    android:includeFontPadding="false"
+                    android:inputType="phone"
+                    android:letterSpacing="-0.015"
+                    android:textColor="@color/ink"
+                    android:textColorHint="@color/ink_muted"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- 번호 열 자리 초과 시 나타나는 체크 (앱 동작 · 피그마에는 없음) -->
+                <TextView
+                    android:id="@+id/text_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="✓"
+                    android:textColor="@color/mint"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <!-- 동의 줄: 체크 24(Icon/Success) + 14.5 #525C6E. 체크 모양 전환: AccountActivity 담당 -->
+            <LinearLayout
+                android:id="@+id/row_agree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+
+                <TextView
+                    android:id="@+id/check_agree"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/ic_p0_check" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.015"
+                    android:lineHeight="20sp"
+                    android:text="만 14세 이상이며 약관에 동의합니다"
+                    android:textColor="@color/ink_soft"
+                    android:textSize="14.5sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--
+      CTA **위** 안내 자리 (시안 01-2와 같은 위치). 평소에는 비어 있어 CTA 높이가
+      00·02와 같고, 번호·동의가 빠졌을 때만 AccountActivity가 문장을 채운다.
+      "시연용" 상설 문구는 뺐다 — 그 한 줄 때문에 이 화면만 CTA가 위로 밀렸다
+    -->
+    <TextView
+        android:id="@+id/text_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:letterSpacing="-0.015"
+        android:lineHeight="18sp"
+        android:textColor="@color/ink_muted"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/BigButton"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="인증번호 받고 시작하기" />
+
+</LinearLayout>

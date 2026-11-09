@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- P04 '공유하는 안전 정보' 목록 (피그마 v2 Icon/check 1360:11 — 20 · 획 2 #1F63E0) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    <path
+        android:pathData="M5.1,10.15L8.48,13.6L15,6.4"
+        android:strokeColor="@color/mint"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

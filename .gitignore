@@ -1,0 +1,39 @@
+# 빌드 산출물
+build/
+app/build/
+.gradle/
+
+# 개인 환경 설정 (SDK 경로가 사람마다 달라 각자 생성 필요)
+local.properties
+
+# IDE / 도구 로컬 설정
+.idea/
+*.iml
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 파이어베이스 프로젝트 설정 — 각자 콘솔에서 받는 파일 (docs/firebase.md)
+app/google-services.json
+
+# 파이어베이스 서비스 계정 키 — **비밀번호에 준하는 값.**
+# 이 파일 하나로 프로젝트 주인 자격 전부 — 절대 커밋 금지
+server/*firebase-adminsdk*.json
+server/service-account*.json
+firebase-sa.json
+
+# 서버
+server/.venv/
+server/__pycache__/
+server/.env
+server/judgments.db
+
+# 빌드한 APK — 바이너리, 저장소 크기만 증가
+*.apk
+
+# 배포 산출물 — 배포마다 재생성
+/deploy.zip
+/rollback.zip
+.DS_Store

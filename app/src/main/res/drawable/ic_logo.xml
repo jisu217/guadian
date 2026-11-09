@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  앱 로고 (피그마 「Shield · safe zone」 41×42 그대로).
+  초록(#17876B) 꺾쇠 네 개 = '안전 구역', 그 안에 파란(#1D4FD8) 방패.
+  크기 변경은 width/height만 — viewport는 원본 좌표
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="41dp"
+    android:height="42dp"
+    android:viewportWidth="41"
+    android:viewportHeight="42">
+    <path
+        android:pathData="M2.34286,13.2V5.39999C2.34286,3.39999 3.31906,2.39999 5.27144,2.39999H12.8857"
+        android:strokeColor="@color/brand_green"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M28.1143,2.39999H35.7286C37.681,2.39999 38.6571,3.39999 38.6571,5.39999V13.2"
+        android:strokeColor="@color/brand_green"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M38.6571,28.8V36.6C38.6571,38.6 37.681,39.6 35.7286,39.6H28.1143"
+        android:strokeColor="@color/brand_green"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M12.8857,39.6H5.27144C3.31906,39.6 2.34286,38.6 2.34286,36.6V28.8"
+        android:strokeColor="@color/brand_green"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M20.5117,8.83679L29.8621,11.9682C30.3416,12.1401 30.5813,12.484 30.5813,12.9997V20.994C30.5813,27.0726 26.2658,31.4934 20.5117,33.1512C14.7577,31.4934 10.4421,27.0726 10.4421,20.994V12.9997C10.4421,12.484 10.6819,12.1401 11.1614,11.9682L20.5117,8.83679Z"
+        android:fillColor="@color/shield_blue" />
+</vector>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  01 약관 동의 체크 · 꺼짐. 피그마에는 켜진 상태만 존재 — 같은 24 원에 입력칸과 같은
+  테두리(1.8 #DFE3EA · 피그마 01 입력칸 값)를 둘러 "아직 안 고름" 표현
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:pathData="M12,0.9A11.1,11.1 0 1 1 12,23.1A11.1,11.1 0 1 1 12,0.9Z"
+        android:fillColor="@color/bg"
+        android:strokeColor="#DFE3EA"
+        android:strokeWidth="1.8" />
+</vector>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 13G-2 허용 목록의 줄 앞 상자 아이콘 (시안 1234:10 — 네 칸 격자 · 획 2 #525C6E) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    <path
+        android:pathData="M3.5,3.5H8.5V8.5H3.5V3.5ZM11.5,3.5H16.5V8.5H11.5V3.5ZM3.5,11.5H8.5V16.5H3.5V11.5ZM11.5,11.5H16.5V16.5H11.5V11.5Z"
+        android:strokeColor="@color/ink_soft"
+        android:strokeWidth="2"
+        android:strokeLineJoin="round" />
+</vector>

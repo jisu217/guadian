@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 앱바 오른쪽 도움말 (피그마 AppBar/Help · 44×44 · 획 2 #8E97A6). 11G-1에서 export -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="44dp"
+    android:height="44dp"
+    android:viewportWidth="44"
+    android:viewportHeight="44">
+    <path
+        android:pathData="M19.7,19.6C19.7,18.2 20.7,17.2 22.1,17.2C23.5,17.2 24.5,18.2 24.5,19.5C24.5,21.1 22,21.4 22,23.5M22,26.5V26.6M13.4,22C13.4,17.2502 17.2502,13.4 22,13.4C26.7498,13.4 30.6,17.2502 30.6,22C30.6,26.7498 26.7498,30.6 22,30.6C17.2502,30.6 13.4,26.7498 13.4,22Z"
+        android:strokeColor="#8E97A6"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

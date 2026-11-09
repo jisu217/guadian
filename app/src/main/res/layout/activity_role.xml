@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  02 · 역할 선택 (피그마 v2 · 1035:75).
+  피그마 값: 앱바 뒤로 44 x=7 · 제목 20 Bold x=52 (ⓘ 없음) ·
+  큰 제목 「역할을 선택해 주세요」 24 Bold/32 · 부제 15 Regular #525C6E ·
+  카드 342×154 r16 (사이 16) — 고른 카드 #E8F0FF · 테두리 2 #1F63E0 · 체크 28,
+  안 고른 카드 #F5F7FA · 테두리 없음 · 타일 56 r16 · 이름 20 Bold · 설명 14/21 ·
+  안내 카드 #F5F7FA r16 · CTA 56. 카드: RoleActivity에서 그리기
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="20dp">
+
+    <!-- 앱바: 뒤로 44(x=7) + 제목 20 Bold (x=52). 시안에 ⓘ 없음 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="7dp"
+        android:paddingEnd="24dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:contentDescription="뒤로"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            style="@style/AppBarTitle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="1dp"
+            android:text="역할 선택" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp">
+
+            <TextView
+                style="@style/TitleBig"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:text="역할을 선택해 주세요" />
+
+            <!-- 시안 1358:17 — 부제 15 Regular #525C6E -->
+            <TextView
+                android:id="@+id/text_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.015"
+                android:lineHeight="22sp"
+                android:text="이 휴대폰을 사용하는 분을 선택해 주세요"
+                android:textColor="@color/ink_soft"
+                android:textSize="15sp" />
+
+            <!-- 시안 1358:18 — 부제 끝 174 → 첫 카드 196 -->
+            <LinearLayout
+                android:id="@+id/list_roles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:orientation="vertical" />
+
+            <!-- 시안 1425:2 Note/Card — #F5F7FA r16 · 안쪽 20/16 · 13.5/20 #525C6E 두 줄 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/card_bg"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.015"
+                    android:lineHeight="20sp"
+                    android:text="한 가족 계정으로 연결돼요.\n서로 인증을 마친 가족만 보호 상태를 볼 수 있어요."
+                    android:textColor="@color/ink_soft"
+                    android:textSize="13.5sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/BigButton"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="선택하고 계속하기" />
+</LinearLayout>

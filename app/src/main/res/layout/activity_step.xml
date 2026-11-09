@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  단계 화면의 공통 뼈대 (피그마 FULL SERVICE FLOW v2 · P03~P05, S01~S04).
+  앱바(뒤로 44 · 제목 20 Bold) → 진행 바(트랙 #EEF1F5 5dp r3 · 채움 #1F63E0) + "n / m"
+  → 제목 24 Bold → 부제 → 본문 → 안내 카드(#F5F7FA r16) → Primary 버튼 56.
+  좌우 24는 뿌리가 아니라 **구역마다** 지정 — S04처럼 화면 끝까지 닿는 파란 띠를 얹으려면
+  뿌리에 가로 여백 없어야 함. 어르신 화면(S0x)은 Step.senior()가 크기 확대
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_setup"
+    android:orientation="vertical"
+    android:paddingTop="9dp"
+    android:paddingBottom="24dp">
+
+    <!-- 앱바: 피그마 뒤로 화살표 x=7 · 44×44, 제목 x=52 -->
+    <LinearLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="7dp"
+        android:paddingEnd="24dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:contentDescription="뒤로"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/text_title"
+            style="@style/AppBarTitle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingStart="1dp"
+            android:paddingEnd="0dp" />
+    </LinearLayout>
+
+    <!-- 진행 바 + "n / m" (피그마 y=112 · 124). Step.progress()에서 채움 -->
+    <LinearLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp">
+
+        <LinearLayout
+            android:id="@+id/progress_track"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/progress_fill"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <View
+                android:id="@+id/progress_rest"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.015"
+            android:textColor="@color/ink_muted"
+            android:textSize="12.5sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/scroll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="24dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="24dp">
+
+                <!-- 파란 한 줄 라벨 (피그마 v2 P01 1359:6 · P02 1377:6 — 14 Bold #1F63E0) -->
+                <LinearLayout
+                    android:id="@+id/row_eyebrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/text_eyebrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="-0.015"
+                        android:textColor="@color/brand_ink"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_heading"
+                    style="@style/TitleBig"
+                    android:layout_width="match_parent" />
+
+                <TextView
+                    android:id="@+id/text_sub"
+                    style="@style/TitleSub"
+                    android:layout_marginTop="16dp"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:orientation="vertical" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--
+      안내 카드 위치: 스크롤 안이 아니라 **버튼 바로 위**.
+      스크롤 마지막 배치 시 긴 화면에서 카드 윗변만 보이고 잘림.
+      피그마: #F5F7FA r16 · 안쪽 20/15 · 14 Regular #525C6E / 150%.
+    -->
+    <TextView
+        android:id="@+id/text_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:includeFontPadding="false"
+        android:letterSpacing="-0.015"
+        android:lineSpacingExtra="4dp"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/ink_soft"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/BigButton"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp" />
+</LinearLayout>

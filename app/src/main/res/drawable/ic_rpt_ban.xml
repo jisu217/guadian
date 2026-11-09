@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 고위험(자동 차단) 줄 아이콘 (피그마 Icon/ban · 20×20 · 획 2 #E01F26). 11G-1에서 export -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    <path
+        android:pathData="M4.77,15.25L15.25,4.77M2.1,10.01C2.1,5.64 5.64,2.1 10.01,2.1C14.38,2.1 17.92,5.64 17.92,10.01C17.92,14.38 14.38,17.92 10.01,17.92C5.64,17.92 2.1,14.38 2.1,10.01Z"
+        android:strokeColor="#E01F26"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

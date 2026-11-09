@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  누가 쓰는 폰인가 고르기. 피그마에 프레임이 없는 화면이라 02(역할 선택)·A01U의 선택 카드
+  규격 그대로 사용 — 앱바 뒤로 44(x=7) · 제목 20 Bold · 큰 제목 24 Bold · 부제 16/150% ·
+  카드 #F5F7FA r16 (고르면 테두리 2 #1F63E0 + 바탕 #E8F0FF) · 카드 사이 12 · 입력칸 56 r12 ·
+  CTA 56 r12. 카드: ProfileActivity에서 그리기
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="7dp"
+        android:paddingEnd="24dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:contentDescription="뒤로"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            style="@style/AppBarTitle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="1dp"
+            android:text="프로필" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:focusableInTouchMode="true"
+        android:scrollbars="none">
+
+        <!--
+          여기에 descendantFocusability="blocksDescendants"가 걸려 있었다. 화면을 열자마자
+          아래 「이름」 칸이 포커스를 채가 키보드가 튀어나오는 것을 막으려던 것으로 보이는데,
+          그 값은 **자손 전부**의 포커스를 막는다 — 눌러도 커서가 가지 않아 이름을 적을 수
+          없었다. 첫 포커스는 위 ScrollView가 가져가게 두면 키보드도 뜨지 않고 칸도 살아 있다
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp">
+
+            <TextView
+                style="@style/TitleBig"
+                android:layout_width="match_parent"
+                android:layout_marginTop="28dp"
+                android:text="누가 쓰는 폰인가요?" />
+
+            <TextView
+                android:id="@+id/text_account"
+                style="@style/TitleSub"
+                android:layout_marginTop="8dp" />
+
+            <LinearLayout
+                android:id="@+id/list_profiles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/label_new"
+                style="@style/SectionLabel"
+                android:layout_marginTop="16dp"
+                android:text="새로 만들기" />
+
+            <LinearLayout
+                android:id="@+id/box_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/card_bg"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <EditText
+                    android:id="@+id/input_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="@drawable/field_box"
+                    android:backgroundTint="@color/bg"
+                    android:hint="이름"
+                    android:importantForAutofill="no"
+                    android:includeFontPadding="false"
+                    android:inputType="textPersonName"
+                    android:letterSpacing="-0.015"
+                    android:maxLength="10"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:textColor="@color/ink"
+                    android:textColorHint="@color/ink_muted"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:id="@+id/row_role"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal" />
+
+                <Button
+                    android:id="@+id/btn_add"
+                    style="@style/BigButton"
+                    android:layout_marginTop="16dp"
+                    android:text="만들기" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.015"
+                android:textColor="@color/ink_muted"
+                android:textSize="13.5sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

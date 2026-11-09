@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 중위험·반복 출처 줄 아이콘 (피그마 Icon/alert · 20×20 · 획 2 #FF8A1F). 11G-1에서 export -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    <path
+        android:pathData="M10,8.32V12.18M10,14.57V14.66M10,2.8L18.1,17.15H1.9L10,2.8Z"
+        android:strokeColor="#FF8A1F"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

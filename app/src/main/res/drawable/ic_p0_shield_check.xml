@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 00 서비스 소개 · 기능 2 "이동 전 한 번 더 확인" (피그마 40×40 타일 r12 #E8F0FF + 방패체크 획 2 #1F63E0) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="40dp"
+    android:viewportWidth="40"
+    android:viewportHeight="40">
+    <path
+        android:pathData="M12,0H28A12,12 0 0 1 40,12V28A12,12 0 0 1 28,40H12A12,12 0 0 1 0,28V12A12,12 0 0 1 12,0Z"
+        android:fillColor="@color/mint_tint" />
+    <path
+        android:pathData="M16.7,19.9L19,22.2L23.3,17.8M20,11.1L27.4,13.9V19.9C27.4,24.2 24.3,27.3 20,28.8C15.7,27.3 12.6,24.2 12.6,19.9V13.9L20,11.1Z"
+        android:strokeColor="@color/mint"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

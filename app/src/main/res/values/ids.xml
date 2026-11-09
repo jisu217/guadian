@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 코드 생성 뷰의 이름. 화면 다시 그릴 때 뷰 탐색에 필요 -->
+<resources>
+    <item name="text_done_sub" type="id" />
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- H2 보호자 홈 · 「이번 주 안심 요약」 (피그마 v2 Icon/list 1506:31 — 22 · 획 2 #1F63E0) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="22dp"
+    android:height="22dp"
+    android:viewportWidth="22"
+    android:viewportHeight="22">
+    <path
+        android:pathData="M16.8,7.5L12.3,3H5.3V19H16.8V7.5ZM12.3,3V7.5H16.8M8.1,12H13.8M8.1,15H13.8M8.1,9H10.3"
+        android:strokeColor="@color/mint"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

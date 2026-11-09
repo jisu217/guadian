@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 피그마 Icon/circle 20 · 미완료 항목의 빈 동그라미, 획 2 #8E97A6 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    <path
+        android:pathData="M9.97,2.8C6.01,2.8 2.8,6.01 2.8,9.97C2.8,13.93 6.01,17.14 9.97,17.14C13.93,17.14 17.14,13.93 17.14,9.97C17.14,6.01 13.93,2.8 9.97,2.8Z"
+        android:strokeColor="@color/ink_muted"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

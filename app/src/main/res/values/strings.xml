@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 런처 표시 이름. 앱 안의 제목은 시안대로 "안심폰" -->
+    <string name="app_name">GuADian</string>
+    <string name="service_desc">유튜브·인스타그램·당근 화면에 표시된 공식 광고 표기(광고/스폰서/Sponsored)를 읽어, 현재 콘텐츠가 광고임을 시각·청각·진동으로 알려줍니다. 광고를 차단하거나 숨기거나 넘기지 않습니다.</string>
+</resources>

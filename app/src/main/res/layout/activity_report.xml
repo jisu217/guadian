@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  11G-1 · 주간 안전 리포트 · 요약 (피그마 1084:1800) + 11G-2 결과와 조치 (1084:1859).
+  앱바(뒤로 · 제목 20 Bold · 도움말) → 머리글 22 Bold 두 줄 · 설명 15 · 기간 13 Bold 회색
+  → 파란 상태 카드 → 세 칸 지표 → 섹션들(회색 카드 r16) → 아래 CTA 56. 좌우 여백 24.
+  머리글·설명·기간은 스크롤 안, Kotlin이 비우는 body 바깥에 배치
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="24dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp">
+
+            <!-- 기간 · 이름 13 Bold #8E97A6 (시안 1051:26 "8월 3주차 · 김순자님", y=112).
+                 시안에서 머리글보다 **위**에 있다. 도움말 표시 자리 겸용 -->
+            <TextView
+                android:id="@+id/text_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noto"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.015"
+                android:lineHeight="18sp"
+                android:textColor="@color/ink_muted"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <!-- 머리글 24 Bold / 32 (시안 1051:24). 한 부분만 파랑 — ReportActivity가 칠한다 -->
+            <TextView
+                android:id="@+id/text_headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/noto"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.015"
+                android:lineHeight="32sp"
+                android:textColor="@color/ink"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <!-- 설명 15 Regular / 145% #525C6E (시안 1051:25) -->
+            <TextView
+                android:id="@+id/text_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/noto"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.015"
+                android:lineHeight="22sp"
+                android:textColor="@color/ink_soft"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_events"
+        style="@style/BigButton"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:text="위험 앱 확인하기" />
+</LinearLayout>

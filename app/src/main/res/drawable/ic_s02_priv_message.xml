@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- S02 공유하지 않는 정보 · 메시지와 통화 (피그마 v2 Icon/privMessage 1362:20 — 24 · 획 2 #8E97A6) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:pathData="M5.25,4.8L18.81,18.36M4.7,5.62H19.36V15.71H11.11L6.99,19.1V15.71H4.7V5.62Z"
+        android:strokeColor="@color/ink_muted"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

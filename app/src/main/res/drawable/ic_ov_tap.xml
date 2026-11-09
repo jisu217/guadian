@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 피그마 Picto/Tap (2-2 · 30px) — 흰 동심원 (28% · 62% 링 + 꽉 찬 점) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="30dp"
+    android:height="30dp"
+    android:viewportWidth="30"
+    android:viewportHeight="30">
+    <path
+        android:strokeColor="#47FFFFFF"
+        android:strokeWidth="1.5"
+        android:pathData="M0.75,15 A14.25,14.25 0 1,0 29.25,15 A14.25,14.25 0 1,0 0.75,15 Z" />
+    <path
+        android:strokeColor="#9EFFFFFF"
+        android:strokeWidth="2"
+        android:pathData="M5.5,15 A9.5,9.5 0 1,0 24.5,15 A9.5,9.5 0 1,0 5.5,15 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M10,15 A5,5 0 1,0 20,15 A5,5 0 1,0 10,15 Z" />
+</vector>

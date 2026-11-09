@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 피그마 Picto/Warning (2-5) — 주황 삼각형 + 먹색 '!'
+
+     뷰포트를 도형에 **딱 맞춰** 잘랐다 (이슈 #35 후속). 원래는 100×88 안에서 삼각형이
+     71.5×58만 차지해 사방에 여백이 있었다. 그 여백 때문에 차단 픽토(원은 뷰포트를 꽉 채움
+     — 지름 44 = 뷰포트 44)와 같은 크기 상자에 넣어도 삼각형만 작게 보였고, 눈으로 맞추려고
+     상자를 키우면 밴드 높이가 차단 화면보다 높아졌다. 여백을 없애 **같은 상자 높이에서 두
+     픽토가 같은 덩치**가 되게 한다.
+
+     translate(-14.35, -8) 은 잘라낸 여백만큼 내용을 원점으로 당기는 값. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="88dp"
+    android:viewportWidth="71.5"
+    android:viewportHeight="58">
+    <group
+        android:translateX="-14.35"
+        android:translateY="-8">
+        <group
+            android:translateX="14.35"
+            android:translateY="7.41">
+            <path
+                android:fillColor="#FF8A1F"
+                android:pathData="M28.1224,4.06298C31.6766,-1.35434 39.6182,-1.35432 43.1724,4.06299L69.8049,44.6563C73.7316,50.6415 69.4381,58.5933 62.2799,58.5933H9.01495C1.85668,58.5933 -2.43678,50.6414 1.48993,44.6563L28.1224,4.06298Z" />
+        </group>
+        <path
+            android:fillColor="#1A1200"
+            android:pathData="M47,27 A3,3 0 0 1 53,27 V44 A3,3 0 0 1 47,44 Z" />
+        <path
+            android:fillColor="#1A1200"
+            android:pathData="M46.5,53 A3.5,3.5 0 1,0 53.5,53 A3.5,3.5 0 1,0 46.5,53 Z" />
+    </group>
+</vector>

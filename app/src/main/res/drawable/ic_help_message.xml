@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 피그마 Icon/Box 40 r12 #E8F0FF 안의 ic/message (09G '메시지' 칩) · 획 2 #1F63E0. 바탕은 코드 담당 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="40dp"
+    android:viewportWidth="40"
+    android:viewportHeight="40">
+    <path
+        android:pathData="M14.2,12C13,12 12,13 12,14.2V22.4C12,23.8 12.7,24.6 13.6,24.6V28L17.6,24.6H25.8C27,24.6 28,23.6 28,22.4V14.2C28,13 27,12 25.8,12H14.2Z"
+        android:strokeColor="@color/brand_ink"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

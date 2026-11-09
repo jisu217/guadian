@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  스플래시 · GuADian 첫 화면.
+
+  피그마 v2에 스플래시 프레임 없음. 00 서비스 소개의 로고 줄(Shield · safe zone
+  41×42 + 워드마크 "GuADian")을 그대로 키워 흰 바탕 한가운데 배치한 것이 전부 —
+  로고 94×96(원본 41×42 비율) · 아래 16 · 워드마크 Bold 32 (Gu/ian=ink, AD=brand_green,
+  색은 SplashActivity가 SpannableString으로 적용)
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="94dp"
+            android:layout_height="96dp"
+            android:contentDescription="GuADian"
+            android:src="@drawable/ic_logo" />
+
+        <TextView
+            android:id="@+id/text_wordmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:includeFontPadding="false"
+            android:letterSpacing="0.01"
+            android:text="GuADian"
+            android:textColor="@color/ink"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</FrameLayout>

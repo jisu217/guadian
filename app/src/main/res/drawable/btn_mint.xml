@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Primary 버튼 (보호자) · 56dp · r12 · #1F63E0. 눌린 상태는 한 톤 어두운 색 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/mint_dark" />
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/mint" />
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+</selector>

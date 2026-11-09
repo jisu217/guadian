@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 기록 줄 오른쪽 꺾쇠 (피그마 H2 Icon/vec · 20 · 선 2 #8E97A6) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    <path
+        android:pathData="M7.2,4.5 L12.72,10.03 L7.2,15.55"
+        android:strokeColor="#8E97A6"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

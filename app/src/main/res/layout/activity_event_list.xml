@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  07G · 위험 이벤트 (피그마 v2 · 1039:8).
+  앱바(뒤로 44 · 제목 20 Bold) → 세그먼트 필터(#EEF1F5 r12 · 40 · 흰 알약 r10) →
+  날짜 라벨 14 Bold → 기록 카드(#F5F7FA r16 · 100) 목록 → CTA 56 → 아래 탭바.
+  세그먼트와 카드는 EventListActivity가 그린다 — 건수가 붙고 상태마다 색이 달라서.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:orientation="vertical"
+    android:paddingTop="8dp">
+
+    <!-- 앱바: 뒤로 화살표 x=7 · 제목 x=52 · 도움말 오른쪽 끝 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+    </FrameLayout>
+
+    <!-- 시안에는 부제 없음. 도움말 탭 시에만 한 줄 표시 -->
+    <TextView
+        android:id="@+id/text_sub"
+        style="@style/TitleSub"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:visibility="gone" />
+
+    <!-- 시안 Filter/Segment 1383:3 — 342×40 · r12 · #EEF1F5. 칸은 코드에서 채움 -->
+    <LinearLayout
+        android:id="@+id/chips"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal"
+        android:padding="4dp" />
+
+    <!-- 세그먼트 아래 18에서 첫 날짜 라벨 시작 (시안 y=162) -->
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="18dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/list_events"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="12dp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_top"
+        style="@style/BigButton"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="14dp"
+        android:text="확인이 필요한 기록 보기" />
+
+    <View
+        android:id="@+id/tabs_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@color/bg"
+        android:orientation="horizontal" />
+</LinearLayout>

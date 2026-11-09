@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- H2 보호자 홈 · 줄 끝 꺾쇠 (피그마 v2 Icon/chev 1506:35 — 20 · 획 2 #8E97A6) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    <path
+        android:pathData="M7.8,4.8L12.3,10.05L7.8,15.3"
+        android:strokeColor="@color/ink_muted"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

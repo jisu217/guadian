@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 피그마 Picto/Blocked (2-3 44px · 2-6 88px · 2-8 112px) — 빨간 원 + 흰 가로막대 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="44dp"
+    android:height="44dp"
+    android:viewportWidth="44"
+    android:viewportHeight="44">
+    <path
+        android:fillColor="#E01F26"
+        android:pathData="M0,22 A22,22 0 1,0 44,22 A22,22 0 1,0 0,22 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M13.5,19 H30.5 A3,3 0 0 1 30.5,25 H13.5 A3,3 0 0 1 13.5,19 Z" />
+</vector>

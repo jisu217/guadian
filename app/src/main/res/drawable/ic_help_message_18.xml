@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 피그마 Icon/message 18 · 파랑 (09G '가디안 안내' 카드 머리) · 획 2 #1F63E0 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="18dp"
+    android:height="18dp"
+    android:viewportWidth="18"
+    android:viewportHeight="18">
+    <path
+        android:pathData="M4.65,3C3.75,3 3,3.75 3,4.65V10.8C3,11.85 3.53,12.45 4.2,12.45V15L7.2,12.45H13.35C14.25,12.45 15,11.7 15,10.8V4.65C15,3.75 14.25,3 13.35,3H4.65Z"
+        android:strokeColor="@color/brand_ink"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

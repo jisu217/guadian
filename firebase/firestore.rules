@@ -1,0 +1,19 @@
+rules_version = '2';
+
+// 가족 계정 규칙 — 파이어베이스 콘솔 Firestore Database → 규칙 탭에 그대로 붙여넣기
+//
+// 규칙 미설정(테스트 모드) 시: **30일 뒤 전부 잠김, 그 전까지는 누구나 남의 가족 기록 열람 가능.**
+// 핵심 한 문장: 자기 가족 문서(families/{자기 uid}) 아래만 읽기·쓰기 허용
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /families/{familyId}/{document=**} {
+      allow read, write: if request.auth != null && request.auth.uid == familyId;
+    }
+
+    // 그 밖의 모든 경로 차단
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

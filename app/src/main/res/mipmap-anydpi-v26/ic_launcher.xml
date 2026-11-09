@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  적응형 아이콘 (안드로이드 8 이상)
+  - 런처가 바깥 모양을 오려 냄 → 앞면은 가운데 66dp 안전 영역 안에만 배치
+  - 바탕 흰색 (로고와 동일)
+-->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/ic_launcher_background" />
+    <foreground android:drawable="@drawable/ic_launcher_foreground" />
+    <monochrome android:drawable="@drawable/ic_launcher_foreground" />
+</adaptive-icon>

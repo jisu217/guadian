@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- S02 공유하지 않는 정보 · 화면과 사진 (피그마 v2 Icon/privScreen 1362:17 — 24 · 획 2 #8E97A6) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:pathData="M5.25,5.2L18.81,18.76M4.7,7.4H19.36V17.02H4.7V7.4Z"
+        android:strokeColor="@color/ink_muted"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

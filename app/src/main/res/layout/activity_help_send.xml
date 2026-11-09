@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  09G · 도움 보내기 (피그마 1084:1426).
+  앱바(뒤로 44 · 제목 20 Bold) → "보낼 안내 메시지" 카드 → 보조 버튼 → "연락 방법" 칩 둘 → 아래 CTA 56 + 안내 한 줄.
+  카드·칩: Kotlin에서 그리기. 좌우 여백 24
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="24dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="7dp"
+            android:contentDescription="뒤로"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/text_title"
+            style="@style/AppBarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="52dp"
+            android:text="도움 보내기" />
+    </FrameLayout>
+
+    <!-- 시안 1385:3 — 앱바 아래 한 줄 14.5 Regular #525C6E (y=104) -->
+    <TextView
+        android:id="@+id/text_lead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="24dp"
+        android:includeFontPadding="false"
+        android:letterSpacing="-0.015"
+        android:lineHeight="21sp"
+        android:text="전화와 간단한 안내를 바로 보낼 수 있어요"
+        android:textColor="@color/ink_soft"
+        android:textSize="14.5sp" />
+
+    <!-- 안내 줄 아래 27에서 첫 구역 이름 (시안 y=152) -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="27dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp" />
+    </ScrollView>
+
+    <!-- CTA·그 아래 안내 한 줄: Kotlin에서 추가 (문구는 선택한 연락 방법에 따라 변경) -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical" />
+</LinearLayout>

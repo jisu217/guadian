@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 탭바 '안심 요약' (피그마 E01·H1 Nav/Icon ic/chart · 24 · 선 2). 색은 tint로 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:pathData="M3.7,18.4H20.3M7.3,18.4V11.2M11.9,18.4V5.6M16.5,18.4V13.6"
+        android:strokeColor="#000000"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

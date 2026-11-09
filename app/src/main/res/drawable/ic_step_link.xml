@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 피그마 Icon/link 24 (P05 연결 코드 상자 위) · 획 2 #1F63E0 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:pathData="M9.775,14.175L14.175,9.775M9.375,7.575L11.575,5.375C13.275,3.675 15.975,3.675 17.675,5.375C19.375,7.075 19.375,9.775 17.675,11.475L15.475,13.675M14.575,16.375L12.375,18.575C10.675,20.275 7.975,20.275 6.275,18.575C4.575,16.875 4.575,14.175 6.275,12.475L8.475,10.275"
+        android:strokeColor="@color/mint"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

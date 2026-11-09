@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- S02 공유하지 않는 정보 · 비밀번호와 결제 (피그마 v2 Icon/privLock 1362:23 — 24 · 획 2 #8E97A6) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:pathData="M9.25,10.68V7.93C9.25,6.1 10.44,5 12,5C13.56,5 14.75,6.1 14.75,7.93V10.68M6.5,10.68H17.5V18.93H6.5V10.68Z"
+        android:strokeColor="@color/ink_muted"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

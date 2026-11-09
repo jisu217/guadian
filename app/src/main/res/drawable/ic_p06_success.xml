@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- P06 연결 완료 (피그마 v2 Icon/Success 1417:2 — 76 · 파란 원 + 흰 체크 3.4) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="76dp"
+    android:height="76dp"
+    android:viewportWidth="76"
+    android:viewportHeight="76">
+    <path
+        android:pathData="M38,0A38,38 0 1 1 38,76A38,38 0 1 1 38,0Z"
+        android:fillColor="@color/mint" />
+    <path
+        android:pathData="M19.2,38.55L32.03,51.66L56.82,24.3"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3.4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

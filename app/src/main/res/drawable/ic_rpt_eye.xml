@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  '광고 표시' 줄 아이콘 (피그마 Icon/eye · 20×20 · 획 2 #1F63E0). 11G-1에서 export.
+  export SVG에는 눈 윤곽만 있고 눈동자(시안 스크린샷의 점) 누락 — 가운데 점 추가
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    <path
+        android:pathData="M10.03,4.7C7.03,4.7 4.36,6.36 2.2,10.03C4.36,13.7 7.03,15.36 10.03,15.36C13.03,15.36 15.7,13.7 17.86,10.03C15.7,6.36 13.03,4.7 10.03,4.7Z"
+        android:strokeColor="#1F63E0"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M10.03,7.8A2.23,2.23 0 1,0 10.03,12.26A2.23,2.23 0 1,0 10.03,7.8Z"
+        android:fillColor="#1F63E0" />
+</vector>

@@ -1,0 +1,36 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.flyai.adalert'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "com.flyai.adalert"
+        minSdk 26
+        targetSdk 36
+        versionCode 1
+        versionName "1.0"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+}
+
+dependencies {
+    // 버전은 BOM 하나로 통일 — 파이어베이스 라이브러리 간 버전 불일치 시
+    // 빌드는 되고 실행 중 크래시하는 종류의 사고
+    implementation platform('com.google.firebase:firebase-bom:33.7.0')
+    implementation 'com.google.firebase:firebase-auth'        // 가족 계정 로그인
+    implementation 'com.google.firebase:firebase-firestore'   // 프로필 · 위험 기록(실시간)
+    implementation 'com.google.firebase:firebase-messaging'   // 보호자 폰 알림 (다음 단계)
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1'  // 검색결과 위험도·레이어2
+    implementation 'com.google.zxing:core:3.5.3'              // P05 연결 코드 QR (순수 자바 · 그리기는 앱이 직접)
+}

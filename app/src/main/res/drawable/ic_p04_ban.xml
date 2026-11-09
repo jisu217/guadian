@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- P04 '공유하지 않는 개인 정보' 목록 (피그마 v2 Icon/ban 1360:22 — 20 · 획 2 #8E97A6) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    <path
+        android:pathData="M5.77,5.77L14.17,14.17M3.6,9.97C3.6,6.45 6.45,3.6 9.97,3.6C13.49,3.6 16.35,6.45 16.35,9.97C16.35,13.49 13.49,16.35 9.97,16.35C6.45,16.35 3.6,13.49 3.6,9.97Z"
+        android:strokeColor="@color/ink_muted"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

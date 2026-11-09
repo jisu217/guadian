@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 피그마 Icon/Success 44 — 파란 원 + 흰 체크, 획 3 (E01 어르신 조용한 날 상태 카드) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="44dp"
+    android:height="44dp"
+    android:viewportWidth="44"
+    android:viewportHeight="44">
+    <path
+        android:pathData="M22,0 a22,22 0 1,0 0.001,0 z"
+        android:fillColor="@color/mint" />
+    <path
+        android:pathData="M10.9,22.33L18.49,30.09L33.16,13.9"
+        android:strokeColor="@color/on_mint"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

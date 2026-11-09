@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- P05 「QR 보기」 (피그마 v2 Icon/qr 1361:21 — 20 · 획 2 #1C2431) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    <path
+        android:pathData="M15.36,11.7V15.36H13.7M4.7,4.7H8.36V8.36H4.7V4.7ZM11.7,4.7H15.36V8.36H11.7V4.7ZM4.7,11.7H8.36V15.36H4.7V11.7ZM11.7,11.7H13.36V13.36H11.7V11.7Z"
+        android:strokeColor="#1C2431"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

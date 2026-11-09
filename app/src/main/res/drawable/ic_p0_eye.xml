@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 00 서비스 소개 · 기능 1 "위험 광고 자동 감지" (피그마 40×40 타일 r12 #E8F0FF + 눈 획 2 #1F63E0).
+     눈동자 원: export SVG에는 없으나 피그마 렌더에는 보임 — 스크린샷 기준 추가 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="40dp"
+    android:viewportWidth="40"
+    android:viewportHeight="40">
+    <path
+        android:pathData="M12,0H28A12,12 0 0 1 40,12V28A12,12 0 0 1 28,40H12A12,12 0 0 1 0,28V12A12,12 0 0 1 12,0Z"
+        android:fillColor="@color/mint_tint" />
+    <path
+        android:pathData="M20,13.6C16.4,13.6 13.2,15.6 10.6,20C13.2,24.4 16.4,26.4 20,26.4C23.6,26.4 26.8,24.4 29.4,20C26.8,15.6 23.6,13.6 20,13.6Z"
+        android:strokeColor="@color/mint"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M20,17.2A2.8,2.8 0 1 1 20,22.8A2.8,2.8 0 1 1 20,17.2Z"
+        android:strokeColor="@color/mint"
+        android:strokeWidth="2" />
+</vector>

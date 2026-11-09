@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  08G · 이벤트 상세 (피그마 1084:1389).
+  앱바(뒤로 44 · 제목 20 Bold) → 색 깔린 요약 카드 → "무슨 일이 있었나요" 타임라인 카드 → 아래 CTA 56.
+  카드들: Kotlin에서 그리기. 좌우 여백 24
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="24dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+    </FrameLayout>
+
+    <!--
+      시안에는 제목 아래 부제 없음(감지 시각은 요약 카드 안).
+      도움말 탭·저장 실패 시에만 한 줄 표시
+    -->
+    <TextView
+        android:id="@+id/text_when"
+        style="@style/TitleSub"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:visibility="gone" />
+
+    <!-- 앱바 아래 15에서 요약 카드 시작 (시안 y=112) -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_help"
+        style="@style/BigButton"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:text="확인 완료" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 공개 안전 자료 줄의 문서 아이콘 (피그마 Icon/doc · 20×20 · 획 2 #1F63E0). 11G-4에서 export -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    <path
+        android:pathData="M14.9,7.14L11.26,3.5H5.1V16.46H14.9V7.14ZM11.26,3.5V7.14H14.9M7.47,10.45H12.53M7.47,13.3H10.95"
+        android:strokeColor="#1F63E0"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

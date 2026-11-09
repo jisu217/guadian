@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- H2 보호자 홈 · 가족 줄 (피그마 v2 Icon/people 1506:38 — 22 · 획 2 #1F63E0) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="22dp"
+    android:height="22dp"
+    android:viewportWidth="22"
+    android:viewportHeight="22">
+    <path
+        android:pathData="M3.9,17.5C3.9,14.66 5.98,13 8.48,13C10.98,13 13.06,14.66 13.06,17.5M14.81,13.33C16.9,13.75 18.06,15.25 18.06,17.5M13.81,5.25C15.48,5.58 16.48,6.83 16.48,8.33C16.48,9.5 15.98,10.41 15.15,11M5.48,7.5C5.48,5.84 6.82,4.5 8.48,4.5C10.14,4.5 11.48,5.84 11.48,7.5C11.48,9.15 10.14,10.5 8.48,10.5C6.82,10.5 5.48,9.15 5.48,7.5Z"
+        android:strokeColor="@color/mint"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

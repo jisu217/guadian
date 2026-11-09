@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  REPORT-LIST · 안심 요약 목록 (피그마 v2 · 1401:2).
+  앱바(뒤로 44 · 제목 20 Bold) → 안내 한 줄 → 「기간 선택」 줄 → 주 목록 → 아래 탭바.
+  주 목록은 ReportListActivity가 그린다 — 이번 주만 파란 테두리라서
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:orientation="vertical"
+    android:paddingTop="8dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="7dp"
+            android:contentDescription="뒤로"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            style="@style/AppBarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="52dp"
+            android:text="안심 요약" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.015"
+                android:lineHeight="21sp"
+                android:text="지난 주간 리포트를 기간으로 찾아볼 수 있어요"
+                android:textColor="@color/ink_soft"
+                android:textSize="14.5sp" />
+
+            <!--
+              「기간 선택」 (시안 1527:2 — 52 · 아이콘 16x17 x=44 · 글 x=78 ·
+              오른쪽 「날짜로 찾기」 x=258 · 꺾쇠 x=336).
+              누르면 날짜를 고르고, 그 날이 속한 주의 리포트로 간다 (ReportListActivity)
+            -->
+            <LinearLayout
+                android:id="@+id/row_pick"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/card_line"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_marginEnd="17dp"
+                    android:contentDescription="기간"
+                    android:src="@drawable/ic_report_calendar" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.015"
+                    android:text="기간 선택"
+                    android:textColor="@color/mint"
+                    android:textSize="15.5sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="-0.015"
+                    android:text="날짜로 찾기"
+                    android:textColor="@color/ink_muted"
+                    android:textSize="13.5sp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginStart="10dp"
+                    android:contentDescription="열기"
+                    android:src="@drawable/ic_h2_chev" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/list_weeks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/tabs_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@color/bg"
+        android:orientation="horizontal" />
+</LinearLayout>

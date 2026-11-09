@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- P04 사전 동의 확인 · 누른 상태 (피그마 v2 Icon/Check 1360:34 — 22 · 파란 원 + 흰 체크 2.2) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="22dp"
+    android:height="22dp"
+    android:viewportWidth="22"
+    android:viewportHeight="22">
+    <path
+        android:pathData="M11,0A11,11 0 1 1 11,22A11,11 0 1 1 11,0Z"
+        android:fillColor="@color/mint" />
+    <path
+        android:pathData="M5.4,11.12L9.2,15L16.54,6.9"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

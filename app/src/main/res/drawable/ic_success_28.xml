@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 피그마 Icon/Success 28 — 파란 원 + 흰 체크, 획 2.2 (11U 안심 요약의 줄 앞) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="28dp"
+    android:height="28dp"
+    android:viewportWidth="28"
+    android:viewportHeight="28">
+    <path
+        android:pathData="M14,0 a14,14 0 1,0 0.001,0 z"
+        android:fillColor="@color/mint" />
+    <path
+        android:pathData="M6.9,14.16L11.73,19.1L21.06,8.8"
+        android:strokeColor="@color/on_mint"
+        android:strokeWidth="2.2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

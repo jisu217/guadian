@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A01U 내 정보 · 「보호 기능 작동 중」 (피그마 v2 Icon/shieldcheck 1405:13 — 24 · 획 2 #1F63E0) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="22"
+    android:viewportHeight="22">
+    <path
+        android:pathData="M8.13,11.33L10.14,13.34L14.09,9.03M10.97,2.8L17.85,5.73V11.23C17.85,15.08 15,18.02 10.97,19.3C6.94,18.02 4.1,15.08 4.1,11.23V5.73L10.97,2.8Z"
+        android:strokeColor="@color/mint"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

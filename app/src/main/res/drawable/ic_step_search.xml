@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 피그마 Icon/search 20 (P04 앱 사용 시간과 검색어) · 획 2 #8E97A6 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    <path
+        android:pathData="M12.48,12.48L16.56,16.56M3.4,8.65C3.4,5.75 5.75,3.4 8.65,3.4C11.55,3.4 13.9,5.75 13.9,8.65C13.9,11.55 11.55,13.9 8.65,13.9C5.75,13.9 3.4,11.55 3.4,8.65Z"
+        android:strokeColor="@color/ink_muted"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

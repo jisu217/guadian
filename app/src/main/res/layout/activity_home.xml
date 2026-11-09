@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  홈 화면 뼈대 (피그마 H1 어르신 홈 · H2 보호자 홈 · A01 내 정보).
+  위쪽은 역할마다 다르고 아래 탭바는 공통. 내용은 코드에서 채움 —
+  두 홈의 내용이 완전히 달라(한쪽은 안심, 한쪽은 오늘의 위험) 레이아웃 분리 시 같은 파일 두 벌.
+
+  좌우 여백 24는 header/body가 각자 보유 — 탭바는 화면 끝까지 닿아야 하므로
+  (피그마: 탭바 390 폭 · 높이 68 · 위 1px #E6E9EE 선 · 흰 바탕)
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:orientation="vertical"
+    android:paddingTop="12dp">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="12dp" />
+    </ScrollView>
+
+    <View
+        android:id="@+id/tabs_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@color/bg"
+        android:orientation="horizontal" />
+</LinearLayout>

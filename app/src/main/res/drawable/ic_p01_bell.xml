@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- P01 카드 · '보호자 알림 범위' (피그마 v2 Icon/bell 1369:4 — 24 · 획 2 #1F63E0) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:pathData="M10.1,19.1C10.5,20.2 11.2,20.8 12,20.8C12.8,20.8 13.5,20.2 13.9,19.1M12,3.2C8.8,3.2 6.6,5.5 6.6,8.6V13L5,16.4H19L17.4,13V8.6C17.4,5.5 15.2,3.2 12,3.2Z"
+        android:strokeColor="@color/mint"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>
